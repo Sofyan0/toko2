@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
                    RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
 
-                   StringRequest stringRequest = new StringRequest(Request.Method.GET, Db_Contract.urlLogin + "?username=" + username + "&password=" + password, new Response.Listener<String>() {
+                   StringRequest stringRequest = new StringRequest(Request.Method.POST, Db_Contract.urlLogin + "?username=" + username + "&password=" + password, new Response.Listener<String>() {
                        @Override
                        public void onResponse(String response) {
 
